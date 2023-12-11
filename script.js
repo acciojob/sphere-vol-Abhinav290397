@@ -4,7 +4,7 @@ function volume_sphere(event) {
 	event.preventDefault();
 	const Rad = parseFloat(Form.radius.value);
 	const Vol = (4/3)*(Math.PI)*Rad*Rad*Rad;
-    Form.volume.value = Vol;
+    Form.volume.value = Vol.toFixed(4);
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
